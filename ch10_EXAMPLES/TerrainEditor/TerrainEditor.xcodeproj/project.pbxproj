@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03077EE214FBD82400D9131F /* TEElevationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03077EE114FBD82400D9131F /* TEElevationTool.m */; };
+		03077EE614FBDABD00D9131F /* TEAreaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03077EE514FBDABC00D9131F /* TEAreaTool.m */; };
+		0312C9F914472CF000D30B0C /* ModelShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0312C9F714472CF000D30B0C /* ModelShader.fsh */; };
+		0312C9FA14472CF000D30B0C /* ModelShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0312C9F814472CF000D30B0C /* ModelShader.vsh */; };
+		036AD7CA14462D4E007C4940 /* TEModelEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 036AD7C914462D4E007C4940 /* TEModelEffect.m */; };
+		0371BF7D1443E7C000D95B35 /* TEModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0371BF7C1443E7BF00D95B35 /* TEModelManager.m */; };
+		0371BF811443FDDF00D95B35 /* TEModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0371BF801443FDDE00D95B35 /* TEModel.m */; };
+		0371BF841443FE6900D95B35 /* TEMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 0371BF831443FE6800D95B35 /* TEMesh.m */; };
+		0380DEB01440C8BB009B309E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0380DEAF1440C8BB009B309E /* Cocoa.framework */; };
+		0380DEBA1440C8BB009B309E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0380DEB81440C8BB009B309E /* InfoPlist.strings */; };
+		0380DEBC1440C8BB009B309E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEBB1440C8BB009B309E /* main.m */; };
+		0380DEC01440C8BB009B309E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0380DEBE1440C8BB009B309E /* Credits.rtf */; };
+		0380DEC31440C8BB009B309E /* TEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEC21440C8BB009B309E /* TEDocument.m */; };
+		0380DEC61440C8BB009B309E /* TEDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0380DEC41440C8BB009B309E /* TEDocument.xib */; };
+		0380DEC91440C8BB009B309E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0380DEC71440C8BB009B309E /* MainMenu.xib */; };
+		0380DECC1440C8BB009B309E /* TEDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0380DECA1440C8BB009B309E /* TEDocument.xcdatamodeld */; };
+		0380DEE21440C915009B309E /* UtilityFrustum.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DED81440C915009B309E /* UtilityFrustum.m */; };
+		0380DEE31440C915009B309E /* UtilityMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 0380DED91440C915009B309E /* UtilityMath.c */; };
+		0380DEE41440C915009B309E /* UtilityOpenGLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEDD1440C915009B309E /* UtilityOpenGLCamera.m */; };
+		0380DEE51440C915009B309E /* UtilityTextureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEDF1440C915009B309E /* UtilityTextureLoader.m */; };
+		0380DEE61440C915009B309E /* UtilityVector.c in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEE01440C915009B309E /* UtilityVector.c */; };
+		0380DEED1440CA6A009B309E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0380DEEC1440CA6A009B309E /* OpenGL.framework */; };
+		0380DEF41440CBBB009B309E /* TEEditWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEF31440CBBB009B309E /* TEEditWindowController.m */; };
+		0380DEFB1440CC47009B309E /* TETerrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEFA1440CC47009B309E /* TETerrain.m */; };
+		0380DEFE1440CD89009B309E /* TETerrain+modelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DEFD1440CD89009B309E /* TETerrain+modelAdditions.m */; };
+		0380DF031440CDCB009B309E /* TEHeightMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF001440CDCB009B309E /* TEHeightMap.m */; };
+		0380DF041440CDCB009B309E /* TETerrainTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF021440CDCB009B309E /* TETerrainTile.m */; };
+		0380DF121440CED0009B309E /* PickTerrainShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0380DF061440CED0009B309E /* PickTerrainShader.fsh */; };
+		0380DF131440CED0009B309E /* PickTerrainShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0380DF071440CED0009B309E /* PickTerrainShader.vsh */; };
+		0380DF141440CED0009B309E /* TerrainShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0380DF081440CED0009B309E /* TerrainShader.fsh */; };
+		0380DF151440CED0009B309E /* TerrainShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0380DF091440CED0009B309E /* TerrainShader.vsh */; };
+		0380DF161440CED0009B309E /* TEEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF0B1440CED0009B309E /* TEEffect.m */; };
+		0380DF171440CED0009B309E /* TEPickTerrainEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF0D1440CED0009B309E /* TEPickTerrainEffect.m */; };
+		0380DF181440CED0009B309E /* TETerrainEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF0F1440CED0009B309E /* TETerrainEffect.m */; };
+		0380DF191440CED0009B309E /* TEView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF111440CED0009B309E /* TEView.m */; };
+		0380DF1D1440CEF1009B309E /* heightMap.tga in Resources */ = {isa = PBXBuildFile; fileRef = 0380DF1A1440CEF1009B309E /* heightMap.tga */; };
+		0380DF1E1440CEF1009B309E /* RadiusSelectionTool.png in Resources */ = {isa = PBXBuildFile; fileRef = 0380DF1B1440CEF1009B309E /* RadiusSelectionTool.png */; };
+		0380DF1F1440CEF1009B309E /* Sahara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0380DF1C1440CEF1009B309E /* Sahara.jpg */; };
+		03AD6CED1444D20800C08DC1 /* TEModelPlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AD6CEC1444D20800C08DC1 /* TEModelPlacement.m */; };
+		03E75B501444A31A0070AC5D /* TETool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E75B4F1444A31A0070AC5D /* TETool.m */; };
+		03E75B541444A91E0070AC5D /* TEDetailTextureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E75B531444A91E0070AC5D /* TEDetailTextureTool.m */; };
+		03E75B571444AB190070AC5D /* TEModelPlacementTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E75B561444AB180070AC5D /* TEModelPlacementTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03077EE014FBD82400D9131F /* TEElevationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEElevationTool.h; sourceTree = "<group>"; };
+		03077EE114FBD82400D9131F /* TEElevationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEElevationTool.m; sourceTree = "<group>"; };
+		03077EE414FBDABC00D9131F /* TEAreaTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAreaTool.h; sourceTree = "<group>"; };
+		03077EE514FBDABC00D9131F /* TEAreaTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAreaTool.m; sourceTree = "<group>"; };
+		0312C9F714472CF000D30B0C /* ModelShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ModelShader.fsh; sourceTree = "<group>"; };
+		0312C9F814472CF000D30B0C /* ModelShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ModelShader.vsh; sourceTree = "<group>"; };
+		036AD7C814462D4E007C4940 /* TEModelEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEModelEffect.h; sourceTree = "<group>"; };
+		036AD7C914462D4E007C4940 /* TEModelEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEModelEffect.m; sourceTree = "<group>"; };
+		0371BF7B1443E7BF00D95B35 /* TEModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEModelManager.h; sourceTree = "<group>"; };
+		0371BF7C1443E7BF00D95B35 /* TEModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEModelManager.m; sourceTree = "<group>"; };
+		0371BF7F1443FDDE00D95B35 /* TEModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEModel.h; sourceTree = "<group>"; };
+		0371BF801443FDDE00D95B35 /* TEModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEModel.m; sourceTree = "<group>"; };
+		0371BF821443FE6800D95B35 /* TEMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEMesh.h; sourceTree = "<group>"; };
+		0371BF831443FE6800D95B35 /* TEMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEMesh.m; sourceTree = "<group>"; };
+		0380DEAB1440C8BB009B309E /* TerrainEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerrainEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0380DEAF1440C8BB009B309E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0380DEB21440C8BB009B309E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0380DEB31440C8BB009B309E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0380DEB41440C8BB009B309E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0380DEB71440C8BB009B309E /* TerrainEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TerrainEditor-Info.plist"; sourceTree = "<group>"; };
+		0380DEB91440C8BB009B309E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0380DEBB1440C8BB009B309E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0380DEBD1440C8BB009B309E /* TerrainEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TerrainEditor-Prefix.pch"; sourceTree = "<group>"; };
+		0380DEBF1440C8BB009B309E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0380DEC11440C8BB009B309E /* TEDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEDocument.h; sourceTree = "<group>"; };
+		0380DEC21440C8BB009B309E /* TEDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEDocument.m; sourceTree = "<group>"; };
+		0380DEC51440C8BB009B309E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TEDocument.xib; sourceTree = "<group>"; };
+		0380DEC81440C8BB009B309E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0380DECB1440C8BB009B309E /* TEDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEDocument.xcdatamodel; sourceTree = "<group>"; };
+		0380DED71440C915009B309E /* UtilityFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityFrustum.h; sourceTree = "<group>"; };
+		0380DED81440C915009B309E /* UtilityFrustum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFrustum.m; sourceTree = "<group>"; };
+		0380DED91440C915009B309E /* UtilityMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtilityMath.c; sourceTree = "<group>"; };
+		0380DEDA1440C915009B309E /* UtilityMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMath.h; sourceTree = "<group>"; };
+		0380DEDB1440C915009B309E /* UtilityMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMatrix.h; sourceTree = "<group>"; };
+		0380DEDC1440C915009B309E /* UtilityOpenGLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityOpenGLCamera.h; sourceTree = "<group>"; };
+		0380DEDD1440C915009B309E /* UtilityOpenGLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityOpenGLCamera.m; sourceTree = "<group>"; };
+		0380DEDE1440C915009B309E /* UtilityTextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityTextureLoader.h; sourceTree = "<group>"; };
+		0380DEDF1440C915009B309E /* UtilityTextureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityTextureLoader.m; sourceTree = "<group>"; };
+		0380DEE01440C915009B309E /* UtilityVector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtilityVector.c; sourceTree = "<group>"; };
+		0380DEE11440C915009B309E /* UtilityVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityVector.h; sourceTree = "<group>"; };
+		0380DEEC1440CA6A009B309E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		0380DEF21440CBBB009B309E /* TEEditWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEEditWindowController.h; sourceTree = "<group>"; };
+		0380DEF31440CBBB009B309E /* TEEditWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEEditWindowController.m; sourceTree = "<group>"; };
+		0380DEF91440CC47009B309E /* TETerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETerrain.h; sourceTree = "<group>"; };
+		0380DEFA1440CC47009B309E /* TETerrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETerrain.m; sourceTree = "<group>"; };
+		0380DEFC1440CD89009B309E /* TETerrain+modelAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TETerrain+modelAdditions.h"; sourceTree = "<group>"; };
+		0380DEFD1440CD89009B309E /* TETerrain+modelAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TETerrain+modelAdditions.m"; sourceTree = "<group>"; };
+		0380DEFF1440CDCB009B309E /* TEHeightMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEHeightMap.h; sourceTree = "<group>"; };
+		0380DF001440CDCB009B309E /* TEHeightMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEHeightMap.m; sourceTree = "<group>"; };
+		0380DF011440CDCB009B309E /* TETerrainTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETerrainTile.h; sourceTree = "<group>"; };
+		0380DF021440CDCB009B309E /* TETerrainTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETerrainTile.m; sourceTree = "<group>"; };
+		0380DF061440CED0009B309E /* PickTerrainShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PickTerrainShader.fsh; sourceTree = "<group>"; };
+		0380DF071440CED0009B309E /* PickTerrainShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PickTerrainShader.vsh; sourceTree = "<group>"; };
+		0380DF081440CED0009B309E /* TerrainShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TerrainShader.fsh; sourceTree = "<group>"; };
+		0380DF091440CED0009B309E /* TerrainShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TerrainShader.vsh; sourceTree = "<group>"; };
+		0380DF0A1440CED0009B309E /* TEEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEEffect.h; sourceTree = "<group>"; };
+		0380DF0B1440CED0009B309E /* TEEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEEffect.m; sourceTree = "<group>"; };
+		0380DF0C1440CED0009B309E /* TEPickTerrainEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEPickTerrainEffect.h; sourceTree = "<group>"; };
+		0380DF0D1440CED0009B309E /* TEPickTerrainEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEPickTerrainEffect.m; sourceTree = "<group>"; };
+		0380DF0E1440CED0009B309E /* TETerrainEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETerrainEffect.h; sourceTree = "<group>"; };
+		0380DF0F1440CED0009B309E /* TETerrainEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETerrainEffect.m; sourceTree = "<group>"; };
+		0380DF101440CED0009B309E /* TEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEView.h; sourceTree = "<group>"; };
+		0380DF111440CED0009B309E /* TEView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEView.m; sourceTree = "<group>"; };
+		0380DF1A1440CEF1009B309E /* heightMap.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = heightMap.tga; sourceTree = "<group>"; };
+		0380DF1B1440CEF1009B309E /* RadiusSelectionTool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RadiusSelectionTool.png; sourceTree = "<group>"; };
+		0380DF1C1440CEF1009B309E /* Sahara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sahara.jpg; sourceTree = "<group>"; };
+		03AD6CEB1444D20800C08DC1 /* TEModelPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEModelPlacement.h; sourceTree = "<group>"; };
+		03AD6CEC1444D20800C08DC1 /* TEModelPlacement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEModelPlacement.m; sourceTree = "<group>"; };
+		03E75B4E1444A3190070AC5D /* TETool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETool.h; sourceTree = "<group>"; };
+		03E75B4F1444A31A0070AC5D /* TETool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETool.m; sourceTree = "<group>"; };
+		03E75B521444A91E0070AC5D /* TEDetailTextureTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDetailTextureTool.h; sourceTree = "<group>"; };
+		03E75B531444A91E0070AC5D /* TEDetailTextureTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDetailTextureTool.m; sourceTree = "<group>"; };
+		03E75B551444AB180070AC5D /* TEModelPlacementTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEModelPlacementTool.h; sourceTree = "<group>"; };
+		03E75B561444AB180070AC5D /* TEModelPlacementTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEModelPlacementTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0380DEA81440C8BB009B309E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0380DEB01440C8BB009B309E /* Cocoa.framework in Frameworks */,
+				0380DEED1440CA6A009B309E /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0380DEA01440C8BB009B309E = {
+			isa = PBXGroup;
+			children = (
+				0380DEB51440C8BB009B309E /* TerrainEditor */,
+				0380DEAE1440C8BB009B309E /* Frameworks */,
+				0380DEAC1440C8BB009B309E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0380DEAC1440C8BB009B309E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0380DEAB1440C8BB009B309E /* TerrainEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0380DEAE1440C8BB009B309E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0380DEEC1440CA6A009B309E /* OpenGL.framework */,
+				0380DEAF1440C8BB009B309E /* Cocoa.framework */,
+				0380DEB11440C8BB009B309E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0380DEB11440C8BB009B309E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0380DEB21440C8BB009B309E /* AppKit.framework */,
+				0380DEB31440C8BB009B309E /* CoreData.framework */,
+				0380DEB41440C8BB009B309E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0380DEB51440C8BB009B309E /* TerrainEditor */ = {
+			isa = PBXGroup;
+			children = (
+				0380DF051440CED0009B309E /* Shaders */,
+				0380DEF81440CC47009B309E /* GeneratedModel */,
+				0380DED61440C915009B309E /* Utility */,
+				0380DEFC1440CD89009B309E /* TETerrain+modelAdditions.h */,
+				0380DEFD1440CD89009B309E /* TETerrain+modelAdditions.m */,
+				0380DEFF1440CDCB009B309E /* TEHeightMap.h */,
+				0380DF001440CDCB009B309E /* TEHeightMap.m */,
+				0380DF011440CDCB009B309E /* TETerrainTile.h */,
+				0380DF021440CDCB009B309E /* TETerrainTile.m */,
+				0380DEC11440C8BB009B309E /* TEDocument.h */,
+				0380DEC21440C8BB009B309E /* TEDocument.m */,
+				0380DEF21440CBBB009B309E /* TEEditWindowController.h */,
+				0380DEF31440CBBB009B309E /* TEEditWindowController.m */,
+				0380DF0A1440CED0009B309E /* TEEffect.h */,
+				0380DF0B1440CED0009B309E /* TEEffect.m */,
+				036AD7C814462D4E007C4940 /* TEModelEffect.h */,
+				036AD7C914462D4E007C4940 /* TEModelEffect.m */,
+				0380DF0C1440CED0009B309E /* TEPickTerrainEffect.h */,
+				0380DF0D1440CED0009B309E /* TEPickTerrainEffect.m */,
+				0380DF0E1440CED0009B309E /* TETerrainEffect.h */,
+				0380DF0F1440CED0009B309E /* TETerrainEffect.m */,
+				0380DF101440CED0009B309E /* TEView.h */,
+				0380DF111440CED0009B309E /* TEView.m */,
+				03E75B4E1444A3190070AC5D /* TETool.h */,
+				03E75B4F1444A31A0070AC5D /* TETool.m */,
+				03077EE414FBDABC00D9131F /* TEAreaTool.h */,
+				03077EE514FBDABC00D9131F /* TEAreaTool.m */,
+				03077EE014FBD82400D9131F /* TEElevationTool.h */,
+				03077EE114FBD82400D9131F /* TEElevationTool.m */,
+				03E75B521444A91E0070AC5D /* TEDetailTextureTool.h */,
+				03E75B531444A91E0070AC5D /* TEDetailTextureTool.m */,
+				03E75B551444AB180070AC5D /* TEModelPlacementTool.h */,
+				03E75B561444AB180070AC5D /* TEModelPlacementTool.m */,
+				0371BF7B1443E7BF00D95B35 /* TEModelManager.h */,
+				0371BF7C1443E7BF00D95B35 /* TEModelManager.m */,
+				0371BF7F1443FDDE00D95B35 /* TEModel.h */,
+				0371BF801443FDDE00D95B35 /* TEModel.m */,
+				0371BF821443FE6800D95B35 /* TEMesh.h */,
+				0371BF831443FE6800D95B35 /* TEMesh.m */,
+				0380DEC41440C8BB009B309E /* TEDocument.xib */,
+				0380DEC71440C8BB009B309E /* MainMenu.xib */,
+				0380DECA1440C8BB009B309E /* TEDocument.xcdatamodeld */,
+				0380DEB61440C8BB009B309E /* Supporting Files */,
+			);
+			path = TerrainEditor;
+			sourceTree = "<group>";
+		};
+		0380DEB61440C8BB009B309E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0380DF1A1440CEF1009B309E /* heightMap.tga */,
+				0380DF1B1440CEF1009B309E /* RadiusSelectionTool.png */,
+				0380DF1C1440CEF1009B309E /* Sahara.jpg */,
+				0380DEB71440C8BB009B309E /* TerrainEditor-Info.plist */,
+				0380DEB81440C8BB009B309E /* InfoPlist.strings */,
+				0380DEBB1440C8BB009B309E /* main.m */,
+				0380DEBD1440C8BB009B309E /* TerrainEditor-Prefix.pch */,
+				0380DEBE1440C8BB009B309E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0380DED61440C915009B309E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0380DED71440C915009B309E /* UtilityFrustum.h */,
+				0380DED81440C915009B309E /* UtilityFrustum.m */,
+				0380DED91440C915009B309E /* UtilityMath.c */,
+				0380DEDA1440C915009B309E /* UtilityMath.h */,
+				0380DEDB1440C915009B309E /* UtilityMatrix.h */,
+				0380DEDC1440C915009B309E /* UtilityOpenGLCamera.h */,
+				0380DEDD1440C915009B309E /* UtilityOpenGLCamera.m */,
+				0380DEDE1440C915009B309E /* UtilityTextureLoader.h */,
+				0380DEDF1440C915009B309E /* UtilityTextureLoader.m */,
+				0380DEE01440C915009B309E /* UtilityVector.c */,
+				0380DEE11440C915009B309E /* UtilityVector.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0380DEF81440CC47009B309E /* GeneratedModel */ = {
+			isa = PBXGroup;
+			children = (
+				03AD6CEB1444D20800C08DC1 /* TEModelPlacement.h */,
+				03AD6CEC1444D20800C08DC1 /* TEModelPlacement.m */,
+				0380DEF91440CC47009B309E /* TETerrain.h */,
+				0380DEFA1440CC47009B309E /* TETerrain.m */,
+			);
+			path = GeneratedModel;
+			sourceTree = "<group>";
+		};
+		0380DF051440CED0009B309E /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0312C9F714472CF000D30B0C /* ModelShader.fsh */,
+				0312C9F814472CF000D30B0C /* ModelShader.vsh */,
+				0380DF061440CED0009B309E /* PickTerrainShader.fsh */,
+				0380DF071440CED0009B309E /* PickTerrainShader.vsh */,
+				0380DF081440CED0009B309E /* TerrainShader.fsh */,
+				0380DF091440CED0009B309E /* TerrainShader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0380DEAA1440C8BB009B309E /* TerrainEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0380DECF1440C8BB009B309E /* Build configuration list for PBXNativeTarget "TerrainEditor" */;
+			buildPhases = (
+				0380DEA71440C8BB009B309E /* Sources */,
+				0380DEA81440C8BB009B309E /* Frameworks */,
+				0380DEA91440C8BB009B309E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TerrainEditor;
+			productName = TerrainEditor;
+			productReference = 0380DEAB1440C8BB009B309E /* TerrainEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0380DEA21440C8BB009B309E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 0380DEA51440C8BB009B309E /* Build configuration list for PBXProject "TerrainEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0380DEA01440C8BB009B309E;
+			productRefGroup = 0380DEAC1440C8BB009B309E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0380DEAA1440C8BB009B309E /* TerrainEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0380DEA91440C8BB009B309E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0312C9F914472CF000D30B0C /* ModelShader.fsh in Resources */,
+				0312C9FA14472CF000D30B0C /* ModelShader.vsh in Resources */,
+				0380DF121440CED0009B309E /* PickTerrainShader.fsh in Resources */,
+				0380DF131440CED0009B309E /* PickTerrainShader.vsh in Resources */,
+				0380DF141440CED0009B309E /* TerrainShader.fsh in Resources */,
+				0380DF151440CED0009B309E /* TerrainShader.vsh in Resources */,
+				0380DEBA1440C8BB009B309E /* InfoPlist.strings in Resources */,
+				0380DEC01440C8BB009B309E /* Credits.rtf in Resources */,
+				0380DEC61440C8BB009B309E /* TEDocument.xib in Resources */,
+				0380DEC91440C8BB009B309E /* MainMenu.xib in Resources */,
+				0380DF1D1440CEF1009B309E /* heightMap.tga in Resources */,
+				0380DF1E1440CEF1009B309E /* RadiusSelectionTool.png in Resources */,
+				0380DF1F1440CEF1009B309E /* Sahara.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0380DEA71440C8BB009B309E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0380DEBC1440C8BB009B309E /* main.m in Sources */,
+				0380DEC31440C8BB009B309E /* TEDocument.m in Sources */,
+				0380DECC1440C8BB009B309E /* TEDocument.xcdatamodeld in Sources */,
+				0380DEE21440C915009B309E /* UtilityFrustum.m in Sources */,
+				0380DEE31440C915009B309E /* UtilityMath.c in Sources */,
+				0380DEE41440C915009B309E /* UtilityOpenGLCamera.m in Sources */,
+				0380DEE51440C915009B309E /* UtilityTextureLoader.m in Sources */,
+				0380DEE61440C915009B309E /* UtilityVector.c in Sources */,
+				0380DEF41440CBBB009B309E /* TEEditWindowController.m in Sources */,
+				0380DEFB1440CC47009B309E /* TETerrain.m in Sources */,
+				0380DEFE1440CD89009B309E /* TETerrain+modelAdditions.m in Sources */,
+				0380DF031440CDCB009B309E /* TEHeightMap.m in Sources */,
+				0380DF041440CDCB009B309E /* TETerrainTile.m in Sources */,
+				0380DF161440CED0009B309E /* TEEffect.m in Sources */,
+				0380DF171440CED0009B309E /* TEPickTerrainEffect.m in Sources */,
+				0380DF181440CED0009B309E /* TETerrainEffect.m in Sources */,
+				0380DF191440CED0009B309E /* TEView.m in Sources */,
+				0371BF7D1443E7C000D95B35 /* TEModelManager.m in Sources */,
+				0371BF811443FDDF00D95B35 /* TEModel.m in Sources */,
+				0371BF841443FE6900D95B35 /* TEMesh.m in Sources */,
+				03E75B501444A31A0070AC5D /* TETool.m in Sources */,
+				03E75B541444A91E0070AC5D /* TEDetailTextureTool.m in Sources */,
+				03E75B571444AB190070AC5D /* TEModelPlacementTool.m in Sources */,
+				03AD6CED1444D20800C08DC1 /* TEModelPlacement.m in Sources */,
+				036AD7CA14462D4E007C4940 /* TEModelEffect.m in Sources */,
+				03077EE214FBD82400D9131F /* TEElevationTool.m in Sources */,
+				03077EE614FBDABD00D9131F /* TEAreaTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0380DEB81440C8BB009B309E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0380DEB91440C8BB009B309E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0380DEBE1440C8BB009B309E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0380DEBF1440C8BB009B309E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0380DEC41440C8BB009B309E /* TEDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0380DEC51440C8BB009B309E /* en */,
+			);
+			name = TEDocument.xib;
+			sourceTree = "<group>";
+		};
+		0380DEC71440C8BB009B309E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0380DEC81440C8BB009B309E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0380DECD1440C8BB009B309E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0380DECE1440C8BB009B309E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0380DED01440C8BB009B309E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TerrainEditor/TerrainEditor-Prefix.pch";
+				INFOPLIST_FILE = "TerrainEditor/TerrainEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0380DED11440C8BB009B309E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TerrainEditor/TerrainEditor-Prefix.pch";
+				INFOPLIST_FILE = "TerrainEditor/TerrainEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0380DEA51440C8BB009B309E /* Build configuration list for PBXProject "TerrainEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0380DECD1440C8BB009B309E /* Debug */,
+				0380DECE1440C8BB009B309E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0380DECF1440C8BB009B309E /* Build configuration list for PBXNativeTarget "TerrainEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0380DED01440C8BB009B309E /* Debug */,
+				0380DED11440C8BB009B309E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0380DECA1440C8BB009B309E /* TEDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0380DECB1440C8BB009B309E /* TEDocument.xcdatamodel */,
+			);
+			currentVersion = 0380DECB1440C8BB009B309E /* TEDocument.xcdatamodel */;
+			path = TEDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0380DEA21440C8BB009B309E /* Project object */;
+}

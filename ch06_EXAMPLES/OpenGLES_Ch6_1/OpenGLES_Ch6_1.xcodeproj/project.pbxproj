@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0364A81113FA33E600F48BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364A81013FA33E600F48BE4 /* UIKit.framework */; };
+		0364A81313FA33E600F48BE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364A81213FA33E600F48BE4 /* Foundation.framework */; };
+		0364A81913FA33E600F48BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0364A81713FA33E600F48BE4 /* InfoPlist.strings */; };
+		0364A81B13FA33E600F48BE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0364A81A13FA33E600F48BE4 /* main.m */; };
+		0364A81F13FA33E600F48BE4 /* OpenGLES_Ch6_1AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0364A81E13FA33E600F48BE4 /* OpenGLES_Ch6_1AppDelegate.m */; };
+		0364A82213FA33E600F48BE4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0364A82013FA33E600F48BE4 /* MainStoryboard_iPhone.storyboard */; };
+		0364A82513FA33E600F48BE4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0364A82313FA33E600F48BE4 /* MainStoryboard_iPad.storyboard */; };
+		0364A82813FA33E600F48BE4 /* OpenGLES_Ch6_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0364A82713FA33E600F48BE4 /* OpenGLES_Ch6_1ViewController.m */; };
+		0364A83813FA344100F48BE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364A83513FA344100F48BE4 /* OpenGLES.framework */; };
+		0364A83913FA344100F48BE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364A83613FA344100F48BE4 /* QuartzCore.framework */; };
+		0364A83A13FA344100F48BE4 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364A83713FA344100F48BE4 /* GLKit.framework */; };
+		0396EB0113FABC2A00B4A563 /* SceneCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0396EB0013FABC2A00B4A563 /* SceneCar.m */; };
+		0396EB0913FAE20A00B4A563 /* SceneCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0396EB0813FAE20A00B4A563 /* SceneCarModel.m */; };
+		0396EB0C13FAE21E00B4A563 /* SceneRinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0396EB0B13FAE21E00B4A563 /* SceneRinkModel.m */; };
+		03E2625615292B7400012BF2 /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E2625315292B7400012BF2 /* AGLKContext.m */; };
+		03E2625715292B7400012BF2 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E2625515292B7400012BF2 /* AGLKVertexAttribArrayBuffer.m */; };
+		03E262C115293AE900012BF2 /* SceneMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E262BE15293AE900012BF2 /* SceneMesh.m */; };
+		03E262C215293AE900012BF2 /* SceneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E262C015293AE900012BF2 /* SceneModel.m */; };
+		03EC720C1641DD0C00CAB35A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03EC72081641DD0C00CAB35A /* Default-568h@2x.png */; };
+		03EC720D1641DD0C00CAB35A /* OpenGL_ES_for_iOS_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 03EC72091641DD0C00CAB35A /* OpenGL_ES_for_iOS_57x57.png */; };
+		03EC720E1641DD0C00CAB35A /* OpenGL_ES_for_iOS_72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 03EC720A1641DD0C00CAB35A /* OpenGL_ES_for_iOS_72x72.png */; };
+		03EC720F1641DD0C00CAB35A /* OpenGL_ES_for_iOS_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 03EC720B1641DD0C00CAB35A /* OpenGL_ES_for_iOS_114x114.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0364A80C13FA33E500F48BE4 /* OpenGLES_Ch6_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES_Ch6_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0364A81013FA33E600F48BE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0364A81213FA33E600F48BE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0364A81613FA33E600F48BE4 /* OpenGLES_Ch6_1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenGLES_Ch6_1-Info.plist"; sourceTree = "<group>"; };
+		0364A81813FA33E600F48BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0364A81A13FA33E600F48BE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0364A81C13FA33E600F48BE4 /* OpenGLES_Ch6_1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGLES_Ch6_1-Prefix.pch"; sourceTree = "<group>"; };
+		0364A81D13FA33E600F48BE4 /* OpenGLES_Ch6_1AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLES_Ch6_1AppDelegate.h; sourceTree = "<group>"; };
+		0364A81E13FA33E600F48BE4 /* OpenGLES_Ch6_1AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLES_Ch6_1AppDelegate.m; sourceTree = "<group>"; };
+		0364A82113FA33E600F48BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0364A82413FA33E600F48BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0364A82613FA33E600F48BE4 /* OpenGLES_Ch6_1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLES_Ch6_1ViewController.h; sourceTree = "<group>"; };
+		0364A82713FA33E600F48BE4 /* OpenGLES_Ch6_1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLES_Ch6_1ViewController.m; sourceTree = "<group>"; };
+		0364A83413FA343400F48BE4 /* bumperCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bumperCar.h; sourceTree = "<group>"; };
+		0364A83513FA344100F48BE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0364A83613FA344100F48BE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0364A83713FA344100F48BE4 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0396EAFF13FABC2A00B4A563 /* SceneCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneCar.h; sourceTree = "<group>"; };
+		0396EB0013FABC2A00B4A563 /* SceneCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneCar.m; sourceTree = "<group>"; };
+		0396EB0313FADF9B00B4A563 /* bumperRink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bumperRink.h; sourceTree = "<group>"; };
+		0396EB0713FAE20A00B4A563 /* SceneCarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneCarModel.h; sourceTree = "<group>"; };
+		0396EB0813FAE20A00B4A563 /* SceneCarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneCarModel.m; sourceTree = "<group>"; };
+		0396EB0A13FAE21E00B4A563 /* SceneRinkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneRinkModel.h; sourceTree = "<group>"; };
+		0396EB0B13FAE21E00B4A563 /* SceneRinkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneRinkModel.m; sourceTree = "<group>"; };
+		03E2625215292B7400012BF2 /* AGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGLKContext.h; path = ../../../AGLKit/AGLKContext.h; sourceTree = "<group>"; };
+		03E2625315292B7400012BF2 /* AGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGLKContext.m; path = ../../../AGLKit/AGLKContext.m; sourceTree = "<group>"; };
+		03E2625415292B7400012BF2 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGLKVertexAttribArrayBuffer.h; path = ../../../AGLKit/AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		03E2625515292B7400012BF2 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGLKVertexAttribArrayBuffer.m; path = ../../../AGLKit/AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		03E262BD15293AE900012BF2 /* SceneMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneMesh.h; path = ../../CommonCode/SceneMesh.h; sourceTree = "<group>"; };
+		03E262BE15293AE900012BF2 /* SceneMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneMesh.m; path = ../../CommonCode/SceneMesh.m; sourceTree = "<group>"; };
+		03E262BF15293AE900012BF2 /* SceneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneModel.h; path = ../../CommonCode/SceneModel.h; sourceTree = "<group>"; };
+		03E262C015293AE900012BF2 /* SceneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneModel.m; path = ../../CommonCode/SceneModel.m; sourceTree = "<group>"; };
+		03EC72081641DD0C00CAB35A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		03EC72091641DD0C00CAB35A /* OpenGL_ES_for_iOS_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OpenGL_ES_for_iOS_57x57.png; path = ../../../Resources/OpenGL_ES_for_iOS_57x57.png; sourceTree = "<group>"; };
+		03EC720A1641DD0C00CAB35A /* OpenGL_ES_for_iOS_72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OpenGL_ES_for_iOS_72x72.png; path = ../../../Resources/OpenGL_ES_for_iOS_72x72.png; sourceTree = "<group>"; };
+		03EC720B1641DD0C00CAB35A /* OpenGL_ES_for_iOS_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OpenGL_ES_for_iOS_114x114.png; path = ../../../Resources/OpenGL_ES_for_iOS_114x114.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0364A80913FA33E500F48BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0364A81113FA33E600F48BE4 /* UIKit.framework in Frameworks */,
+				0364A81313FA33E600F48BE4 /* Foundation.framework in Frameworks */,
+				0364A83813FA344100F48BE4 /* OpenGLES.framework in Frameworks */,
+				0364A83913FA344100F48BE4 /* QuartzCore.framework in Frameworks */,
+				0364A83A13FA344100F48BE4 /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0364A80113FA33E500F48BE4 = {
+			isa = PBXGroup;
+			children = (
+				0364A81413FA33E600F48BE4 /* OpenGLES_Ch6_1 */,
+				0364A80F13FA33E500F48BE4 /* Frameworks */,
+				0364A80D13FA33E500F48BE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0364A80D13FA33E500F48BE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0364A80C13FA33E500F48BE4 /* OpenGLES_Ch6_1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0364A80F13FA33E500F48BE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0364A83513FA344100F48BE4 /* OpenGLES.framework */,
+				0364A83613FA344100F48BE4 /* QuartzCore.framework */,
+				0364A83713FA344100F48BE4 /* GLKit.framework */,
+				0364A81013FA33E600F48BE4 /* UIKit.framework */,
+				0364A81213FA33E600F48BE4 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0364A81413FA33E600F48BE4 /* OpenGLES_Ch6_1 */ = {
+			isa = PBXGroup;
+			children = (
+				03E2625215292B7400012BF2 /* AGLKContext.h */,
+				03E2625315292B7400012BF2 /* AGLKContext.m */,
+				03E2625415292B7400012BF2 /* AGLKVertexAttribArrayBuffer.h */,
+				03E2625515292B7400012BF2 /* AGLKVertexAttribArrayBuffer.m */,
+				0364A83413FA343400F48BE4 /* bumperCar.h */,
+				0396EB0313FADF9B00B4A563 /* bumperRink.h */,
+				03E262BD15293AE900012BF2 /* SceneMesh.h */,
+				03E262BE15293AE900012BF2 /* SceneMesh.m */,
+				03E262BF15293AE900012BF2 /* SceneModel.h */,
+				03E262C015293AE900012BF2 /* SceneModel.m */,
+				0396EB0713FAE20A00B4A563 /* SceneCarModel.h */,
+				0396EB0813FAE20A00B4A563 /* SceneCarModel.m */,
+				0396EB0A13FAE21E00B4A563 /* SceneRinkModel.h */,
+				0396EB0B13FAE21E00B4A563 /* SceneRinkModel.m */,
+				0396EAFF13FABC2A00B4A563 /* SceneCar.h */,
+				0396EB0013FABC2A00B4A563 /* SceneCar.m */,
+				0364A81D13FA33E600F48BE4 /* OpenGLES_Ch6_1AppDelegate.h */,
+				0364A81E13FA33E600F48BE4 /* OpenGLES_Ch6_1AppDelegate.m */,
+				0364A82013FA33E600F48BE4 /* MainStoryboard_iPhone.storyboard */,
+				0364A82313FA33E600F48BE4 /* MainStoryboard_iPad.storyboard */,
+				0364A82613FA33E600F48BE4 /* OpenGLES_Ch6_1ViewController.h */,
+				0364A82713FA33E600F48BE4 /* OpenGLES_Ch6_1ViewController.m */,
+				0364A81513FA33E600F48BE4 /* Supporting Files */,
+			);
+			path = OpenGLES_Ch6_1;
+			sourceTree = "<group>";
+		};
+		0364A81513FA33E600F48BE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03EC72081641DD0C00CAB35A /* Default-568h@2x.png */,
+				03EC72091641DD0C00CAB35A /* OpenGL_ES_for_iOS_57x57.png */,
+				03EC720A1641DD0C00CAB35A /* OpenGL_ES_for_iOS_72x72.png */,
+				03EC720B1641DD0C00CAB35A /* OpenGL_ES_for_iOS_114x114.png */,
+				0364A81613FA33E600F48BE4 /* OpenGLES_Ch6_1-Info.plist */,
+				0364A81713FA33E600F48BE4 /* InfoPlist.strings */,
+				0364A81A13FA33E600F48BE4 /* main.m */,
+				0364A81C13FA33E600F48BE4 /* OpenGLES_Ch6_1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0364A80B13FA33E500F48BE4 /* OpenGLES_Ch6_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0364A82B13FA33E600F48BE4 /* Build configuration list for PBXNativeTarget "OpenGLES_Ch6_1" */;
+			buildPhases = (
+				0364A80813FA33E500F48BE4 /* Sources */,
+				0364A80913FA33E500F48BE4 /* Frameworks */,
+				0364A80A13FA33E500F48BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLES_Ch6_1;
+			productName = OpenGLES_Ch6_1;
+			productReference = 0364A80C13FA33E500F48BE4 /* OpenGLES_Ch6_1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0364A80313FA33E500F48BE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 0364A80613FA33E500F48BE4 /* Build configuration list for PBXProject "OpenGLES_Ch6_1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0364A80113FA33E500F48BE4;
+			productRefGroup = 0364A80D13FA33E500F48BE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0364A80B13FA33E500F48BE4 /* OpenGLES_Ch6_1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0364A80A13FA33E500F48BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0364A81913FA33E600F48BE4 /* InfoPlist.strings in Resources */,
+				0364A82213FA33E600F48BE4 /* MainStoryboard_iPhone.storyboard in Resources */,
+				0364A82513FA33E600F48BE4 /* MainStoryboard_iPad.storyboard in Resources */,
+				03EC720C1641DD0C00CAB35A /* Default-568h@2x.png in Resources */,
+				03EC720D1641DD0C00CAB35A /* OpenGL_ES_for_iOS_57x57.png in Resources */,
+				03EC720E1641DD0C00CAB35A /* OpenGL_ES_for_iOS_72x72.png in Resources */,
+				03EC720F1641DD0C00CAB35A /* OpenGL_ES_for_iOS_114x114.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0364A80813FA33E500F48BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0364A81B13FA33E600F48BE4 /* main.m in Sources */,
+				0364A81F13FA33E600F48BE4 /* OpenGLES_Ch6_1AppDelegate.m in Sources */,
+				0364A82813FA33E600F48BE4 /* OpenGLES_Ch6_1ViewController.m in Sources */,
+				0396EB0113FABC2A00B4A563 /* SceneCar.m in Sources */,
+				0396EB0913FAE20A00B4A563 /* SceneCarModel.m in Sources */,
+				0396EB0C13FAE21E00B4A563 /* SceneRinkModel.m in Sources */,
+				03E2625615292B7400012BF2 /* AGLKContext.m in Sources */,
+				03E2625715292B7400012BF2 /* AGLKVertexAttribArrayBuffer.m in Sources */,
+				03E262C115293AE900012BF2 /* SceneMesh.m in Sources */,
+				03E262C215293AE900012BF2 /* SceneModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0364A81713FA33E600F48BE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0364A81813FA33E600F48BE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0364A82013FA33E600F48BE4 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0364A82113FA33E600F48BE4 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0364A82313FA33E600F48BE4 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0364A82413FA33E600F48BE4 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0364A82913FA33E600F48BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0364A82A13FA33E600F48BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0364A82C13FA33E600F48BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLES_Ch6_1/OpenGLES_Ch6_1-Prefix.pch";
+				INFOPLIST_FILE = "OpenGLES_Ch6_1/OpenGLES_Ch6_1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0364A82D13FA33E600F48BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLES_Ch6_1/OpenGLES_Ch6_1-Prefix.pch";
+				INFOPLIST_FILE = "OpenGLES_Ch6_1/OpenGLES_Ch6_1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0364A80613FA33E500F48BE4 /* Build configuration list for PBXProject "OpenGLES_Ch6_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0364A82913FA33E600F48BE4 /* Debug */,
+				0364A82A13FA33E600F48BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0364A82B13FA33E600F48BE4 /* Build configuration list for PBXNativeTarget "OpenGLES_Ch6_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0364A82C13FA33E600F48BE4 /* Debug */,
+				0364A82D13FA33E600F48BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0364A80313FA33E500F48BE4 /* Project object */;
+}

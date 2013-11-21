@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ModelPlacement" representedClassName="TEModelPlacement" syncable="YES">
+        <attribute name="angle" attributeType="Float" maxValueString="360" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="index" optional="YES" transient="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="modelName" attributeType="String" syncable="YES"/>
+        <attribute name="positionX" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="positionY" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="positionZ" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="terrain" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Terrain" inverseName="modelPlacements" inverseEntity="Terrain" syncable="YES"/>
+    </entity>
+    <entity name="Terrain" representedClassName="TETerrain" syncable="YES">
+        <attribute name="detailTextureInfo0" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="detailTextureInfo1" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="detailTextureInfo2" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="detailTextureInfo3" attributeType="Transformable" syncable="YES"/>
+        <attribute name="detailTextureScale0" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="detailTextureScale1" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="detailTextureScale2" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="detailTextureScale3" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="glVertexAttributeBufferID" optional="YES" transient="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasWater" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="heightScaleFactor" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="length" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lightAndWeightsTextureInfo" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="lightDirectionX" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lightDirectionY" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lightDirectionZ" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="metersPerUnit" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="modelsData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="positionAttributesData" attributeType="Binary" syncable="YES"/>
+        <attribute name="waterHeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="width" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="modelPlacements" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ModelPlacement" inverseName="terrain" inverseEntity="ModelPlacement" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ModelPlacement" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="Terrain" positionX="-2" positionY="189" width="128" height="375"/>
+    </elements>
+</model>

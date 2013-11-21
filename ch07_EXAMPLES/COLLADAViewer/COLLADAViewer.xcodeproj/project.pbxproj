@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0318A47F141D04130032CD2A /* CVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318A47E141D04130032CD2A /* CVView.m */; };
+		0318A489141D08AB0032CD2A /* COLLADARootNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318A488141D08AB0032CD2A /* COLLADARootNode.m */; };
+		0318A48C141D09610032CD2A /* CVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318A48B141D09610032CD2A /* CVModel.m */; };
+		033934C1141D6F7C0081C2A7 /* UtilityTextureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 033934C0141D6F7C0081C2A7 /* UtilityTextureLoader.m */; };
+		0350199F141C05FE00BF3FF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0350199E141C05FE00BF3FF2 /* Cocoa.framework */; };
+		035019A9141C05FE00BF3FF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 035019A7141C05FE00BF3FF2 /* InfoPlist.strings */; };
+		035019AB141C05FE00BF3FF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019AA141C05FE00BF3FF2 /* main.m */; };
+		035019AF141C05FE00BF3FF2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 035019AD141C05FE00BF3FF2 /* Credits.rtf */; };
+		035019B2141C05FE00BF3FF2 /* CVDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019B1141C05FE00BF3FF2 /* CVDocument.m */; };
+		035019B5141C05FE00BF3FF2 /* CVDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035019B3141C05FE00BF3FF2 /* CVDocument.xib */; };
+		035019B8141C05FE00BF3FF2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035019B6141C05FE00BF3FF2 /* MainMenu.xib */; };
+		035019C3141C0DF200BF3FF2 /* COLLADAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019C2141C0DF200BF3FF2 /* COLLADAParser.m */; };
+		035019D1141C1B3000BF3FF2 /* UtilityFrustum.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019C9141C1B2E00BF3FF2 /* UtilityFrustum.m */; };
+		035019D2141C1B3000BF3FF2 /* UtilityMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 035019CA141C1B2E00BF3FF2 /* UtilityMath.c */; };
+		035019D3141C1B3000BF3FF2 /* UtilityOpenGLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019CE141C1B2F00BF3FF2 /* UtilityOpenGLCamera.m */; };
+		035019D4141C1B3000BF3FF2 /* UtilityVector.c in Sources */ = {isa = PBXBuildFile; fileRef = 035019CF141C1B3000BF3FF2 /* UtilityVector.c */; };
+		035019D7141C242A00BF3FF2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035019D6141C242A00BF3FF2 /* OpenGL.framework */; };
+		035019DA141C2F2500BF3FF2 /* COLLADAGeometryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019D9141C2F2500BF3FF2 /* COLLADAGeometryParser.m */; };
+		035019E0141C454C00BF3FF2 /* CVMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019DF141C454C00BF3FF2 /* CVMesh.m */; };
+		035019E7141C60B700BF3FF2 /* COLLADAGeometryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 035019E6141C60B700BF3FF2 /* COLLADAGeometryInfo.m */; };
+		035F30B7141CA9BD00CCE337 /* COLLADANode.m in Sources */ = {isa = PBXBuildFile; fileRef = 035F30B6141CA9BD00CCE337 /* COLLADANode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0318A47D141D04120032CD2A /* CVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVView.h; sourceTree = "<group>"; };
+		0318A47E141D04130032CD2A /* CVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVView.m; sourceTree = "<group>"; };
+		0318A487141D08AB0032CD2A /* COLLADARootNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COLLADARootNode.h; sourceTree = "<group>"; };
+		0318A488141D08AB0032CD2A /* COLLADARootNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COLLADARootNode.m; sourceTree = "<group>"; };
+		0318A48A141D09600032CD2A /* CVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVModel.h; sourceTree = "<group>"; };
+		0318A48B141D09610032CD2A /* CVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVModel.m; sourceTree = "<group>"; };
+		033934BF141D6F7C0081C2A7 /* UtilityTextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityTextureLoader.h; sourceTree = "<group>"; };
+		033934C0141D6F7C0081C2A7 /* UtilityTextureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityTextureLoader.m; sourceTree = "<group>"; };
+		0350199A141C05FE00BF3FF2 /* COLLADAViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COLLADAViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0350199E141C05FE00BF3FF2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		035019A1141C05FE00BF3FF2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		035019A2141C05FE00BF3FF2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		035019A3141C05FE00BF3FF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		035019A6141C05FE00BF3FF2 /* COLLADAViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "COLLADAViewer-Info.plist"; sourceTree = "<group>"; };
+		035019A8141C05FE00BF3FF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		035019AA141C05FE00BF3FF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		035019AC141C05FE00BF3FF2 /* COLLADAViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COLLADAViewer-Prefix.pch"; sourceTree = "<group>"; };
+		035019AE141C05FE00BF3FF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		035019B0141C05FE00BF3FF2 /* CVDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVDocument.h; sourceTree = "<group>"; };
+		035019B1141C05FE00BF3FF2 /* CVDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVDocument.m; sourceTree = "<group>"; };
+		035019B4141C05FE00BF3FF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CVDocument.xib; sourceTree = "<group>"; };
+		035019B7141C05FE00BF3FF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		035019C1141C0DF200BF3FF2 /* COLLADAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COLLADAParser.h; sourceTree = "<group>"; };
+		035019C2141C0DF200BF3FF2 /* COLLADAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COLLADAParser.m; sourceTree = "<group>"; };
+		035019C8141C1B2D00BF3FF2 /* UtilityFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityFrustum.h; sourceTree = "<group>"; };
+		035019C9141C1B2E00BF3FF2 /* UtilityFrustum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFrustum.m; sourceTree = "<group>"; };
+		035019CA141C1B2E00BF3FF2 /* UtilityMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtilityMath.c; sourceTree = "<group>"; };
+		035019CB141C1B2E00BF3FF2 /* UtilityMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMath.h; sourceTree = "<group>"; };
+		035019CC141C1B2E00BF3FF2 /* UtilityMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMatrix.h; sourceTree = "<group>"; };
+		035019CD141C1B2F00BF3FF2 /* UtilityOpenGLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityOpenGLCamera.h; sourceTree = "<group>"; };
+		035019CE141C1B2F00BF3FF2 /* UtilityOpenGLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityOpenGLCamera.m; sourceTree = "<group>"; };
+		035019CF141C1B3000BF3FF2 /* UtilityVector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtilityVector.c; sourceTree = "<group>"; };
+		035019D0141C1B3000BF3FF2 /* UtilityVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityVector.h; sourceTree = "<group>"; };
+		035019D6141C242A00BF3FF2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		035019D8141C2F2500BF3FF2 /* COLLADAGeometryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COLLADAGeometryParser.h; sourceTree = "<group>"; };
+		035019D9141C2F2500BF3FF2 /* COLLADAGeometryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COLLADAGeometryParser.m; sourceTree = "<group>"; };
+		035019DE141C454C00BF3FF2 /* CVMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMesh.h; sourceTree = "<group>"; };
+		035019DF141C454C00BF3FF2 /* CVMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVMesh.m; sourceTree = "<group>"; };
+		035019E5141C60B600BF3FF2 /* COLLADAGeometryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COLLADAGeometryInfo.h; sourceTree = "<group>"; };
+		035019E6141C60B700BF3FF2 /* COLLADAGeometryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COLLADAGeometryInfo.m; sourceTree = "<group>"; };
+		035F30B5141CA9BD00CCE337 /* COLLADANode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COLLADANode.h; sourceTree = "<group>"; };
+		035F30B6141CA9BD00CCE337 /* COLLADANode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COLLADANode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03501997141C05FE00BF3FF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0350199F141C05FE00BF3FF2 /* Cocoa.framework in Frameworks */,
+				035019D7141C242A00BF3FF2 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0350198F141C05FE00BF3FF2 = {
+			isa = PBXGroup;
+			children = (
+				035019A4141C05FE00BF3FF2 /* COLLADAViewer */,
+				0350199D141C05FE00BF3FF2 /* Frameworks */,
+				0350199B141C05FE00BF3FF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0350199B141C05FE00BF3FF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0350199A141C05FE00BF3FF2 /* COLLADAViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0350199D141C05FE00BF3FF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				035019D6141C242A00BF3FF2 /* OpenGL.framework */,
+				0350199E141C05FE00BF3FF2 /* Cocoa.framework */,
+				035019A0141C05FE00BF3FF2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		035019A0141C05FE00BF3FF2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				035019A1141C05FE00BF3FF2 /* AppKit.framework */,
+				035019A2141C05FE00BF3FF2 /* CoreData.framework */,
+				035019A3141C05FE00BF3FF2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		035019A4141C05FE00BF3FF2 /* COLLADAViewer */ = {
+			isa = PBXGroup;
+			children = (
+				035019D5141C1B3700BF3FF2 /* Utility */,
+				035019C1141C0DF200BF3FF2 /* COLLADAParser.h */,
+				035019C2141C0DF200BF3FF2 /* COLLADAParser.m */,
+				035019D8141C2F2500BF3FF2 /* COLLADAGeometryParser.h */,
+				035019D9141C2F2500BF3FF2 /* COLLADAGeometryParser.m */,
+				035019E5141C60B600BF3FF2 /* COLLADAGeometryInfo.h */,
+				035019E6141C60B700BF3FF2 /* COLLADAGeometryInfo.m */,
+				035F30B5141CA9BD00CCE337 /* COLLADANode.h */,
+				035F30B6141CA9BD00CCE337 /* COLLADANode.m */,
+				0318A487141D08AB0032CD2A /* COLLADARootNode.h */,
+				0318A488141D08AB0032CD2A /* COLLADARootNode.m */,
+				035019DE141C454C00BF3FF2 /* CVMesh.h */,
+				035019DF141C454C00BF3FF2 /* CVMesh.m */,
+				0318A48A141D09600032CD2A /* CVModel.h */,
+				0318A48B141D09610032CD2A /* CVModel.m */,
+				035019B0141C05FE00BF3FF2 /* CVDocument.h */,
+				035019B1141C05FE00BF3FF2 /* CVDocument.m */,
+				0318A47D141D04120032CD2A /* CVView.h */,
+				0318A47E141D04130032CD2A /* CVView.m */,
+				035019B3141C05FE00BF3FF2 /* CVDocument.xib */,
+				035019B6141C05FE00BF3FF2 /* MainMenu.xib */,
+				035019A5141C05FE00BF3FF2 /* Supporting Files */,
+			);
+			path = COLLADAViewer;
+			sourceTree = "<group>";
+		};
+		035019A5141C05FE00BF3FF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				035019A6141C05FE00BF3FF2 /* COLLADAViewer-Info.plist */,
+				035019A7141C05FE00BF3FF2 /* InfoPlist.strings */,
+				035019AA141C05FE00BF3FF2 /* main.m */,
+				035019AC141C05FE00BF3FF2 /* COLLADAViewer-Prefix.pch */,
+				035019AD141C05FE00BF3FF2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		035019D5141C1B3700BF3FF2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				033934BF141D6F7C0081C2A7 /* UtilityTextureLoader.h */,
+				033934C0141D6F7C0081C2A7 /* UtilityTextureLoader.m */,
+				035019C8141C1B2D00BF3FF2 /* UtilityFrustum.h */,
+				035019C9141C1B2E00BF3FF2 /* UtilityFrustum.m */,
+				035019CA141C1B2E00BF3FF2 /* UtilityMath.c */,
+				035019CB141C1B2E00BF3FF2 /* UtilityMath.h */,
+				035019CC141C1B2E00BF3FF2 /* UtilityMatrix.h */,
+				035019CD141C1B2F00BF3FF2 /* UtilityOpenGLCamera.h */,
+				035019CE141C1B2F00BF3FF2 /* UtilityOpenGLCamera.m */,
+				035019CF141C1B3000BF3FF2 /* UtilityVector.c */,
+				035019D0141C1B3000BF3FF2 /* UtilityVector.h */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03501999141C05FE00BF3FF2 /* COLLADAViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035019BB141C05FE00BF3FF2 /* Build configuration list for PBXNativeTarget "COLLADAViewer" */;
+			buildPhases = (
+				03501996141C05FE00BF3FF2 /* Sources */,
+				03501997141C05FE00BF3FF2 /* Frameworks */,
+				03501998141C05FE00BF3FF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = COLLADAViewer;
+			productName = COLLADAViewer;
+			productReference = 0350199A141C05FE00BF3FF2 /* COLLADAViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03501991141C05FE00BF3FF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 03501994141C05FE00BF3FF2 /* Build configuration list for PBXProject "COLLADAViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0350198F141C05FE00BF3FF2;
+			productRefGroup = 0350199B141C05FE00BF3FF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03501999141C05FE00BF3FF2 /* COLLADAViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03501998141C05FE00BF3FF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035019A9141C05FE00BF3FF2 /* InfoPlist.strings in Resources */,
+				035019AF141C05FE00BF3FF2 /* Credits.rtf in Resources */,
+				035019B5141C05FE00BF3FF2 /* CVDocument.xib in Resources */,
+				035019B8141C05FE00BF3FF2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03501996141C05FE00BF3FF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035019AB141C05FE00BF3FF2 /* main.m in Sources */,
+				035019B2141C05FE00BF3FF2 /* CVDocument.m in Sources */,
+				035019C3141C0DF200BF3FF2 /* COLLADAParser.m in Sources */,
+				035019D1141C1B3000BF3FF2 /* UtilityFrustum.m in Sources */,
+				035019D2141C1B3000BF3FF2 /* UtilityMath.c in Sources */,
+				035019D3141C1B3000BF3FF2 /* UtilityOpenGLCamera.m in Sources */,
+				035019D4141C1B3000BF3FF2 /* UtilityVector.c in Sources */,
+				035019DA141C2F2500BF3FF2 /* COLLADAGeometryParser.m in Sources */,
+				035019E0141C454C00BF3FF2 /* CVMesh.m in Sources */,
+				035019E7141C60B700BF3FF2 /* COLLADAGeometryInfo.m in Sources */,
+				035F30B7141CA9BD00CCE337 /* COLLADANode.m in Sources */,
+				0318A47F141D04130032CD2A /* CVView.m in Sources */,
+				0318A489141D08AB0032CD2A /* COLLADARootNode.m in Sources */,
+				0318A48C141D09610032CD2A /* CVModel.m in Sources */,
+				033934C1141D6F7C0081C2A7 /* UtilityTextureLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		035019A7141C05FE00BF3FF2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035019A8141C05FE00BF3FF2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		035019AD141C05FE00BF3FF2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035019AE141C05FE00BF3FF2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		035019B3141C05FE00BF3FF2 /* CVDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035019B4141C05FE00BF3FF2 /* en */,
+			);
+			name = CVDocument.xib;
+			sourceTree = "<group>";
+		};
+		035019B6141C05FE00BF3FF2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035019B7141C05FE00BF3FF2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		035019B9141C05FE00BF3FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		035019BA141C05FE00BF3FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		035019BC141C05FE00BF3FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "COLLADAViewer/COLLADAViewer-Prefix.pch";
+				INFOPLIST_FILE = "COLLADAViewer/COLLADAViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		035019BD141C05FE00BF3FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "COLLADAViewer/COLLADAViewer-Prefix.pch";
+				INFOPLIST_FILE = "COLLADAViewer/COLLADAViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03501994141C05FE00BF3FF2 /* Build configuration list for PBXProject "COLLADAViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035019B9141C05FE00BF3FF2 /* Debug */,
+				035019BA141C05FE00BF3FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035019BB141C05FE00BF3FF2 /* Build configuration list for PBXNativeTarget "COLLADAViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035019BC141C05FE00BF3FF2 /* Debug */,
+				035019BD141C05FE00BF3FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03501991141C05FE00BF3FF2 /* Project object */;
+}
